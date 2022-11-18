@@ -14,6 +14,45 @@ namespace AnandhuPMCodingChallengeNov14
         
         public double[] fare_5 = new double[10];
 
+        public double[] fare_8 = new double[5];
+        public string[] Desitnation = new string[5];
+
+
+        public void SetData_8()
+        {
+           
+            for (int i = 0; i < fare_8.Length; i++)
+            {
+                Console.Write("Enter fare : ");
+                fare_8[i] = Convert.ToDouble(Console.ReadLine());
+                Console.WriteLine("Enter Destination : ");
+                Desitnation[i] = Console.ReadLine();
+
+
+            }
+        }
+        public void GetData_8()
+        {
+            Console.WriteLine("Enter Number : ");
+            int num = int.Parse(Console.ReadLine());
+            Boolean hasFound = false;
+            for (int i = 0; i < fare_8.Length; i++)
+            {
+                if(i == num - 1)
+                {
+                    Console.WriteLine($"Destination is : {Desitnation[i]} Fare : {fare_8[i]}");
+                    hasFound = true;
+                    break;
+                    
+                }
+
+
+            }
+            if (!hasFound)
+            {
+                Console.WriteLine("Not Found");
+            }
+        }
         public void SetData_5()
         {
             Console.WriteLine("Enter 10 fares");

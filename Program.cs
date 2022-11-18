@@ -149,6 +149,7 @@
 //Question 2------------------------------------------------------------------------------------------------
 
 using AnandhuPMCodingChallengeNov14;
+using System.Transactions;
 
 //var f = new Flight();
 
@@ -176,5 +177,67 @@ using AnandhuPMCodingChallengeNov14;
 
 
 //Question 5------------------------------------------------------------------------------------------------
-var f = new Fares();
-f.SetData_5();
+//var f = new Fares();
+//f.SetData_5();
+
+
+//Question 6-------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+//Question 7------------------------------------------------------------------------------------------------
+
+//var p = new Passenger();
+//p.Name = "Amal";
+//p.Miles = 5000000;
+
+
+
+
+//Question 8------------------------------------------------------------------------------------------------
+
+//var p = new Fares();
+//p.SetData_8();
+//p.GetData_8();
+
+
+//Question 9------------------------------------------------------------------------------------------------
+
+//Passenger[] P = new Passenger[5];
+//for(int i = 0; i < P.Length; i++)
+//{
+//    P[i] = new Passenger(); 
+//    Console.WriteLine("Enter DOB for Passenger : "+i);
+//    P[i].SetData();
+//}
+
+
+//Question 10------------------------------------------------------------------------------------------------
+
+
+//Question 12------------------------------------------------------------------------------------------------
+
+var name = new string[] {"Anu","Abhi","Alan","Ashique" };
+var dest = new string[] { "Mumbai", "Chennai", "Bnglr", "Tvm" };
+
+var merge = new string[name.Length + dest.Length];
+int i = 0;
+for ( i = 0; i < name.Length; i++)
+{
+    merge[i] = name[i];
+}
+for (int j = 0; j < dest.Length; j++)
+{
+    merge[i] = dest[j];
+    ++i;
+
+}
+for (i = 0; i < merge.Length; i++)
+{
+    Console.WriteLine(merge[i]);
+}
